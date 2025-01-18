@@ -5,17 +5,7 @@ import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
 
 function App() {
-  const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
-
-  useEffect(() => {
-    if (!isLoading && !isAuthenticated) {
-      loginWithRedirect();
-    }
-  }, [isLoading, isAuthenticated, loginWithRedirect]);
-
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  const { isAuthenticated} = useAuth0();
 
   return (
     <Router>

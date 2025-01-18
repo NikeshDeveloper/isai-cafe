@@ -1,6 +1,6 @@
 import React from 'react';
 import './LandingPage.css'; // Import the CSS file
-import LoginButton from './LoginButton';
+import {LoginButton} from './AuthenticationHelper';
 
 
 // The landing page component
