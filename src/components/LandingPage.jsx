@@ -1,5 +1,7 @@
 import React from 'react';
 import './LandingPage.css'; // Import the CSS file
+import LoginButton from './LoginButton';
+
 
 // The landing page component
 const LandingPage = () => {
@@ -14,8 +16,10 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <header id="landing-header">
-        {/* Logo image */}
-        <img src="shop-logo.png" alt="Isai Cafe Logo" />
+        <div id="header-sub-div">
+          <img src="shop-logo.png" alt="Isai Cafe Logo" />
+          <LoginButton />
+        </div>
         <h1>Welcome to Our Cafe!</h1>
       </header>
 
@@ -45,16 +49,10 @@ const LandingPage = () => {
       </section>
 
       <div className="cta-button-container">
-        {/* 'Order Now' button with icon */}
-        {/* <button className="cta-button order-now" onClick={handlePlaceOrder} disabled>
-          <i className="material-icons">shopping_cart</i>
-          Order Now
-        </button> */}
-
         {/* 'Connect us on whatsapp' button with icon */}
         <button className="cta-button-order order-now" onClick={handlePlaceOrder}>
-        <i className="material-icons">chat</i>
-          Connect and Order Now on Whatsapp
+          <i className="material-icons">chat</i>
+          Order Now on Whatsapp
         </button>
 
         {/* 'Get Location' button with icon */}

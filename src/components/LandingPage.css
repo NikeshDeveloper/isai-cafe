@@ -56,6 +56,13 @@ body {
   
 }
 
+#header-sub-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Typewriter effect for subheading */
 .typewriter {
   display: inline-block;
@@ -260,3 +267,4 @@ body {
     font-size: 0.8rem;
   }
 }
+

@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Auth0Provider
+      domain="dev-53gtjzgio66xa7fk.us.auth0.com"
+      clientId="gZFxhOhm9xOxYDocmXCtQgwHBB6UTkOT"
+      authorizationParams={{
+        redirect_uri: window.location.origin,
+      }}
+      cacheLocation="localstorage" // Ensures sessions persist across refreshes
+      useRefreshTokens={true} // Enables refresh tokens for better session handling
+    >
+      <App />
+    </Auth0Provider>
+
   </React.StrictMode>
 );
 
