@@ -7,6 +7,10 @@ const LandingPage = () => {
     window.open('https://maps.app.goo.gl/RSu57dTdWzMgSAf3A', '_blank');
   };
 
+  const handlePlaceOrder = () => {
+    window.open('https://wa.me/c/919489210861', '_blank');
+  };
+
   return (
     <div className="landing-page">
       <header id="landing-header">
@@ -42,9 +46,15 @@ const LandingPage = () => {
 
       <div className="cta-button-container">
         {/* 'Order Now' button with icon */}
-        <button className="cta-button order-now">
+        {/* <button className="cta-button order-now" onClick={handlePlaceOrder} disabled>
           <i className="material-icons">shopping_cart</i>
           Order Now
+        </button> */}
+
+        {/* 'Connect us on whatsapp' button with icon */}
+        <button className="cta-button-order order-now" onClick={handlePlaceOrder}>
+        <i className="fab fa-whatsapp"></i>
+          Connect and Order Now on Whatsapp
         </button>
 
         {/* 'Get Location' button with icon */}

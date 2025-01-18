@@ -3,8 +3,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #3e3b32, #4b2f1b); /* Dark brown and charcoal gradient */
-  color: #fff; /* White text for good contrast */
+  background: linear-gradient(135deg, #3e3b32, #4b2f1b);
+  color: #fff;
 }
 
 .landing-page {
@@ -16,32 +16,33 @@ body {
   background: linear-gradient(100deg, #f4e1c1 50%, #4a2c2a 50%);
   padding: 20px;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
 }
 
 #landing-header {
   font-size: 3rem;
-  background: linear-gradient(to right, #f3d7a9, #4a2c2a); /* Gradient text */
+  background: linear-gradient(to right, #f3d7a9, #4a2c2a);
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #main-subheading {
   font-size: 2rem;
-  background: linear-gradient(to right, #ffcc00, #ff9966); /* Gradient text */
+  background: linear-gradient(to right, #ffcc00, #ff9966);
   -webkit-background-clip: text;
   color: transparent;
   margin-top: 0;
+  text-align: center;
 }
 
 #main-description {
   font-size: 1.2rem;
-  background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Gradient text */
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px auto;
   max-width: 600px;
   line-height: 1.5;
 }
@@ -63,7 +64,7 @@ body {
   font-family: 'Arial', sans-serif;
   overflow: hidden; /* Ensures text is hidden while typing */
   white-space: nowrap;
-  border-right: 4px solid #fff; /* Cursor */
+  border-right: 4px solid #fff;
   width: 0;
   animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
@@ -113,15 +114,16 @@ body {
 .cta-button-container {
   margin-top: 40px;
   display: flex;
-  gap: 20px; /* Added space between the buttons */
+  gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Call to action button styles */
+/* Call to action buttons */
 .cta-button {
   padding: 15px 30px;
   font-size: 1.2rem;
-  background-color: #6f4f37; /* Rich coffee color */
+  background-color: #4285F4; /* Google Maps blue */
   color: white;
   border: none;
   border-radius: 25px;
@@ -129,35 +131,52 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Space between icon and text */
-  transition: background-color 0.3s ease;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button-order {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #25d366; /* WhatsApp official green */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button-order:hover {
+  background-color: #128c7e; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.cta-button-order i {
+  font-size: 1.5rem; /* Icon size */
+}
+
+/* Optional: Add a shadow effect for a better button appearance */
+.cta-button-order:active {
+  background-color: #075e54; /* Darker green for active state */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on click */
 }
 
 .cta-button:hover {
-  background-color: #4a3e2d; /* Slightly darker shade on hover */
+  background-color: #34a853; /* Google green on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
 }
 
-/* Google Material icon size adjustment */
+.cta-button:active {
+  background-color: #0a6fd6; /* Darker blue for active state */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on click */
+}
+
 .cta-button i {
-  font-size: 1.5rem;
-}
-
-/* Custom 'Order Now' button styles */
-.cta-button.order-now {
-  background-color: #D2A57A; /* Soft beige for order button */
-}
-
-.cta-button.order-now:hover {
-  background-color: #C18C62; /* Slightly darker shade for hover */
-}
-
-/* Custom 'Get Location' button styles */
-.cta-button.get-location {
-  background-color: #A1C4B8; /* Soft greenish blue for location button */
-}
-
-.cta-button.get-location:hover {
-  background-color: #7D9D85; /* Darker greenish blue for hover */
+  font-size: 1.5rem; /* Icon size */
 }
 
 /* Testimonials Section */
@@ -181,8 +200,63 @@ body {
   text-align: center;
 }
 
-.testimonial-author {
-  font-weight: bold;
-  color: #6f4f37;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #landing-header {
+    font-size: 2.5rem;
+  }
+
+  #main-subheading {
+    font-size: 1.8rem;
+  }
+
+  #main-description {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
 }
 
+@media (max-width: 768px) {
+  #landing-header {
+    font-size: 2rem;
+  }
+
+  #main-subheading {
+    font-size: 1.5rem;
+  }
+
+  #main-description {
+    font-size: 0.9rem;
+    max-width: 400px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #landing-header {
+    font-size: 1.8rem;
+  }
+
+  #main-subheading {
+    font-size: 1.2rem;
+  }
+
+  #main-description {
+    font-size: 0.8rem;
+    max-width: 300px;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
