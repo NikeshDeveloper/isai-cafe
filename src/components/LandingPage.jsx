@@ -53,7 +53,7 @@ const LandingPage = () => {
 
         {/* 'Connect us on whatsapp' button with icon */}
         <button className="cta-button-order order-now" onClick={handlePlaceOrder}>
-        <i className="fab fa-whatsapp"></i>
+        <i className="material-icons">chat</i>
           Connect and Order Now on Whatsapp
         </button>
 
