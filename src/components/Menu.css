@@ -1,0 +1,25 @@
+.menu {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  .menu h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .menu-item {
+    text-align: center;
+  }
+  .menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .menu-item h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  

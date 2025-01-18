@@ -1,0 +1,188 @@
+/* General styles for the landing page */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3e3b32, #4b2f1b); /* Dark brown and charcoal gradient */
+  color: #fff; /* White text for good contrast */
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(100deg, #f4e1c1 50%, #4a2c2a 50%);
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+#landing-header {
+  font-size: 3rem;
+  background: linear-gradient(to right, #f3d7a9, #4a2c2a); /* Gradient text */
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+#main-subheading {
+  font-size: 2rem;
+  background: linear-gradient(to right, #ffcc00, #ff9966); /* Gradient text */
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 0;
+}
+
+#main-description {
+  font-size: 1.2rem;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Gradient text */
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+
+
+#landing-header img {
+  width: 80px; /* Adjust the logo size */
+  height: auto;
+  margin-bottom: 20px;
+  
+}
+
+/* Typewriter effect for subheading */
+.typewriter {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff; /* White text for typewriter effect */
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Ensures text is hidden while typing */
+  white-space: nowrap;
+  border-right: 4px solid #fff; /* Cursor */
+  width: 0;
+  animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animation for cursor blinking */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/* Paragraph for the description */
+#main-description {
+  font-size: 1.2rem;
+  color:  #ffffff; /* White text for description */
+  margin-top: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 2s forwards 4s; /* Fade in after typing effect */
+}
+
+/* Fade-in animation for description */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Button container for the call to action */
+.cta-button-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px; /* Added space between the buttons */
+  justify-content: center;
+}
+
+/* Call to action button styles */
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #6f4f37; /* Rich coffee color */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4a3e2d; /* Slightly darker shade on hover */
+}
+
+/* Google Material icon size adjustment */
+.cta-button i {
+  font-size: 1.5rem;
+}
+
+/* Custom 'Order Now' button styles */
+.cta-button.order-now {
+  background-color: #D2A57A; /* Soft beige for order button */
+}
+
+.cta-button.order-now:hover {
+  background-color: #C18C62; /* Slightly darker shade for hover */
+}
+
+/* Custom 'Get Location' button styles */
+.cta-button.get-location {
+  background-color: #A1C4B8; /* Soft greenish blue for location button */
+}
+
+.cta-button.get-location:hover {
+  background-color: #7D9D85; /* Darker greenish blue for hover */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f1f1f1;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  color: #3e4a59;
+}
+
+.testimonial {
+  font-size: 1.2rem;
+  color: #4b2f1b;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #6f4f37;
+}
+

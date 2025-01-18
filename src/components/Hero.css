@@ -1,0 +1,36 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  .hero-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+  .hero-text p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .btn-primary {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
