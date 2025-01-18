@@ -16,12 +16,12 @@ const LandingPage = () => {
       <header id="landing-header">
         {/* Logo image */}
         <img src="shop-logo.png" alt="Isai Cafe Logo" />
-        <h1>Welcome to Our  Cafe!</h1>
+        <h1>Welcome to Our Cafe!</h1>
       </header>
 
       <section id="main-content">
         <h2 id="main-subheading" className="typewriter">Delicious Coffee and Pastries Await You</h2>
-        <p id="main-description">Come and relax in our cozy ambiance while enjoying freshly brewed coffee.</p>
+        <h3 id="main-description">Come and relax in our cozy ambiance while enjoying freshly brewed tea.</h3>
       </section>
 
       <section className="testimonials-section">
